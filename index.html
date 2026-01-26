@@ -1,71 +1,38 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
+    <base target="_top">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ศูนย์แพทยศาสตรศึกษาชั้นคลินิกสำนักการแพทย์</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Dashboard บุคลากร</title>
+    
+    <style>
+        /* ตั้งค่าให้เต็มหน้าจอและลบขอบขาว */
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden; /* ซ่อน Scrollbar ของตัวหน้าหลัก */
+            background-color: #f8f9fa;
+        }
+
+        /* ตั้งค่า Iframe ให้ยืดเต็มพื้นที่ */
+        iframe {
+            display: block; /* ลบช่องว่างด้านล่างที่มักเกิดใน iframe */
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
 </head>
 <body>
 
-    <div class="container">
-            <button id="theme-toggle-btn">🌙</button>
-        <header>
-            <h1>ศูนย์แพทยศาสตรศึกษาชั้นคลินิกสำนักการแพทย์</h1>
-            <p>กลุ่มงานแพทยศาสตรศึกษา สำนักงานพัฒนาระบบบริการทางการแพทย์ กรุงเทพมหานคร</p>
-        </header>
-
-        <main>
-            
-            <!-- <h2 class="fade-in-section">ระบบใช้สำหรับกลุ่มงานแพทยศาสตรศึกษา</h2> -->
-            <p class="fade-in-section">เลือกระบบที่ท่านต้องการใช้งาน หากมีปัญหาหรือข้อสงสัยต่าง ๆ กรุณาติดต่อผู้ดูแลระบบ</p>
-
-            <!--
-            <button class="collapsible fade-in-section">
-                แสดงข้อมูลเพิ่มเติม (กดเพื่อเปิด/ปิด)
-            </button>
-            <div class="content">
-                <p>
-                    ส่วนนี้คือข้อมูลที่ถูกซ่อนไว้ในตอนแรกครับ เมื่อคุณกดปุ่มด้านบน JavaScript จะทำงานโดยการเพิ่มคลาส `active` ให้กับปุ่ม และคำนวณความสูงของเนื้อหาส่วนนี้เพื่อแสดงผลอย่างนุ่มนวลด้วย CSS Transition.
-                </p>
-                <p>
-                    คุณสามารถใส่เนื้อหาอะไรก็ได้ในนี้ เช่น รูปภาพ, ลิสต์, หรือข้อความยาวๆ ครับ
-                </p>
-            </div> 
-            -->
-            
-            <button class="collapsible fade-in-section">
-                Dashboard บุคลากรกลุ่มงานแพทยศาสตรศึกษา
-            </button>
-            <div class="content">
-                <ul>
-                    <li>
-                        <strong><a href="https://script.google.com/macros/s/AKfycbz8Hv31_sdz1lJ5NY4-kV_fG0qolaHPbakrIlJdZx-WcPGGYMVWCjamKDEiVGNO2TRx/exec" target="_blank">Dashboard บุคลากรกลุ่มงานแพทยศาสตรศึกษา</a>:</strong> เว็บไซต์ระบบ
-                    </li>
-                </ul>
-            </div>
-
-            <button class="collapsible fade-in-section">
-                ปฏิทินดำเนินงาน TN1-TN3  ประจำปีงบประมาณ 2569
-            </button>
-            <div class="content">
-                <ul>
-                    <!-- <li>
-                        <strong><a href="#" target="_blank">#</a>:</strong> ระบบ
-                    </li> -->
-                    <li>
-                        <strong><a href="https://drive.google.com/file/d/1tkEr0m3vGGy3MP54sVZN4rVevTi3aASK/view?usp=sharing" target="_blank">ปฏิทินดำเนินงาน TN1-TN3  ประจำปีงบประมาณ 2569</a>:</strong> pdf
-                    </li>
-                </ul>
-            </div>                
-
-        </main>
-    </div>
-
-    <script src="script.js"></script>
+    <iframe 
+        src="https://script.google.com/macros/s/AKfycbz8Hv31_sdz1lJ5NY4-kV_fG0qolaHPbakrIlJdZx-WcPGGYMVWCjamKDEiVGNO2TRx/exec" 
+        allow="geolocation; microphone; camera">
+    </iframe>
 
 </body>
 </html>
